@@ -1,0 +1,15 @@
+.nav {
+   font-family: "Hubot Sans", sans-serif;
+
+}
+
+@media only screen and (max-width: 1024px) {
+  .left-sidebar {
+    display: none;
+  }
+  .right-sidebar {
+    display: none;
+  }
+
+
+}
