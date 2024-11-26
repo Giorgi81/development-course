@@ -3,6 +3,7 @@ import {Course} from "../interfaces/course";
 import {DataService} from "../service/data.service";
 import {getDocs} from "@angular/fire/firestore";
 import {NgForOf, NgStyle} from "@angular/common";
+import {ActivatedRoute} from "@angular/router";
 
 @Component({
   selector: 'app-home',
@@ -21,25 +22,13 @@ export class HomeComponent {
 
 
 
-  constructor(private dataService: DataService) {
+  constructor(private dataService: DataService, private route : ActivatedRoute) {
   }
 
   ngOnInit() {
+    this.course = this.route.snapshot.data['homeCourse'] || []
 
-    getDocs(this.dataService.collect)
-      .then(response => {
-        response.docs.forEach(doc => {
-          this.course.push({
-            backColor: "",
-            price: 0,
-            sc1: "",
-            sc2: "",
-            sc3: "",
-            sc4: "", btnBackColor: "", btnTextColor: "", textColor: "",
-            sc5: "",
-            title: "", ...doc.data(), id : doc.id})
-        })
-      })
+
 
 
 
