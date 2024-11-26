@@ -1,0 +1,53 @@
+.black-back {
+  background-color: white;
+  color: #2E2E48;
+}
+
+
+.white-div{
+  background-color: white;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;  }
+
+.black-div {
+  background-color: #2E2E48;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  color: white;
+}
+
+.black-back {
+  background-color: white;
+  color: red;
+
+}
+
+.buy-btn {
+  width: 250px;
+  height: 50px;
+  border: none;
+  outline: none;
+  background-color: #2E2E48;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 30px;
+  font-size: 15px;
+
+}
+
+
+.main-course {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Hubot Sans", sans-serif;
+  margin-top: 200px;
+
+
+}
+
+@media only screen and (max-width: 1024px) {
+  .footer {
+    display: none;
+  }
+}
