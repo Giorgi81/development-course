@@ -24,6 +24,7 @@ export class ServicesComponent implements OnInit {
 
 
 
+
   constructor(private dataService: DataService, private route : ActivatedRoute) {
   }
 
