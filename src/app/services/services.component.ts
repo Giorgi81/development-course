@@ -21,10 +21,6 @@ export class ServicesComponent implements OnInit {
 
   course : Course[] = []
 
-
-
-
-
   constructor(private dataService: DataService, private route : ActivatedRoute) {
   }
 
