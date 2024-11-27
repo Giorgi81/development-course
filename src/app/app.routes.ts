@@ -21,5 +21,5 @@ export const routes: Routes = [
 
   },
   {path : 'carrer', component: CarrerComponent},
-  {path : '**', component: HomeComponent}
+  {path : '**', redirectTo: '/home'}
 ];
