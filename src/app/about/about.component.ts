@@ -21,4 +21,7 @@ export class AboutComponent implements OnInit{
   }
 
 
+  img : string = "../images.jpeg"
+
+
 }
