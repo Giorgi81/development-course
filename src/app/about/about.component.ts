@@ -10,18 +10,21 @@ import {NgForOf} from "@angular/common";
   templateUrl: './about.component.html',
   styleUrl: './about.component.scss'
 })
-export class AboutComponent implements OnInit{
+export class AboutComponent {
   images : string[] = [
-    'assets/img1.avif',
+    "assets/images/img2.avif",
+    "assets/images/img6.avif",
+    "assets/images/img4.avif",
+    "assets/images/img5.avif",
+    "assets/images/img9.jpg",
+    "assets/images/img8.avif"
+
   ]
 
 
-  ngOnInit() {
-    console.log(this.images[0])
-  }
 
 
-  img : string = "../images.jpeg"
+
 
 
 }
